@@ -605,3 +605,9 @@ void PulsePal::syncAllParams() {
 			serial.writeBytes(messageBytes, 180);
 		}
 }
+
+void PulsePal::flushSerialBuffer(bool in, bool out) { // 
+
+	serial.flush(in, out);
+
+}

@@ -83,6 +83,9 @@ public:
     void setTriggerMode(uint8_t channel, uint8_t mode);
 	void setClientIDString(string idString);
     
+	//Flush serial port
+	void PulsePal::flushSerialBuffer(bool in, bool out);
+
     // Fields
     struct OutputParams {
         int isBiphasic;
